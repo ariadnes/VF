@@ -1,0 +1,383 @@
+
+/* Global Reset & Standards
+	-------------------------------------------------- */
+html, body { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, strong, em, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, section { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style: none; }
+
+/* HTML5 Fixes */
+header, section, nav, footer, aside { display: block; }
+	
+
+/* Basic Styling */
+
+body {
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+h1 {font-size:22px; margin: 10px 10px;}
+h2 {font-size:16px; margin: 8px 10px;}
+
+p {font-size:12px; margin: 12px 15px;}
+
+
+
+/* Header
+-------------------------------------------------------------- */
+header {
+	width:100%;
+	height:70px;
+	background:#444;
+}
+
+header .logo img {
+	width:200px;
+	height:35px;
+	padding-top:17px;
+}
+
+header .login {
+	margin:17px 0;
+}
+
+header .login img 	{
+	width:150;
+	height:35px;
+}
+
+
+/* Navigation
+-------------------------------------------------------------- */
+.mainNav {
+	background:#444;
+	padding:0;
+	margin:0;
+}
+
+.mainNav .tabs {
+	list-style: none;
+	padding: 4px 0 0 20px;
+}
+
+.mainNav .tabs li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: 13px;
+	height: 30px;
+	color: #ececec;
+	text-transform: uppercase;
+}
+
+.mainNav .tabs li a {
+	color: #ececec;
+	text-decoration: none;
+	display: inline-block;
+	padding: 9px 15px 8px 15px;
+	height: 14px;
+}
+
+.mainNav .tabs li a:hover, .mainNav .tabs li a:focus {
+	background-color:#666;
+	
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+
+.mainNav .tabs li.selected {
+	color: #000;
+	background-color: #FFF;
+	height: 30px;
+	padding-bottom:1px;
+	
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+}
+		
+.mainNav .tabs li.selected a {
+	color: #000;
+	text-shadow: none;
+	padding: 9px 15px 8px 15px;
+}
+
+.mainNav .tabs li.selected a:hover {
+	background-color:#FFF;
+}
+
+
+/* site search */
+
+.mainNav .siteSearch input {
+	border: 1px solid #434343;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;	
+	background: #212121;
+	color: #626262;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 227px;
+}
+
+.mainNav .siteSearch input:focus,
+.mainNav .siteSearch input:hover {
+	border-color: #616161;
+	background: #2f2f2f;
+	color: #fff;
+}
+
+.subNav {
+	font-size: 12px;
+	margin-top:10px;
+
+}
+
+.subNavItem {
+	color: #000;
+	padding: 5px 10px;
+	float: left;
+}
+
+.subNavItem a {
+	text-decoration: none;
+	color: #000;
+}
+
+.subNavItem a:focus, .subNavItem a:hover {
+	text-decoration: none;
+	color: #666;
+}
+
+/* Footer
+-------------------------------------------------------------- */
+
+footer {
+	background: #444;
+}
+
+footer li {
+	padding: 8px 0 8px 0;	
+	border-bottom:1px solid #333;
+	
+}
+
+footer li a {
+	text-decoration: none;
+	font-size: 11px;
+	color: #ccc;
+}
+
+footer li.title{
+	margin-top: 16px;
+	padding-bottom: 8px;		
+}
+
+footer li.title a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+
+footer .copyright {
+	text-align: center;
+	font-size: 11px;
+	color: #CCC;
+	margin-top: 16px;
+	padding: 8px;
+	
+}
+
+/* Grid
+-------------------------------------------------------------- */
+
+/* A container should group all your columns. */
+.container {
+  width: 965px;
+  margin: 0 auto;
+}
+
+/* Sets up basic grid floating and margin. */
+div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12 {float:left;margin-right: 19px;}
+
+/* The last column in a row needs this class. */
+div.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1  { width: 63px;}
+.span-2  { width: 145px;}
+.span-3  { width: 227px;}
+.span-4  { width: 309px;}
+.span-5  { width: 391px;}
+.span-6  { width: 473px;}
+.span-7  { width: 555px;}
+.span-8  { width: 637px;}
+.span-9  { width: 719px;}
+.span-10 { width: 801px;}
+.span-11 { width: 883px;}
+.span-12, div.span-12 { width: 965px; margin: 0; }
+
+
+/* Add these to a column to append empty cols. */
+.append-1  { padding-right: 82px;}
+.append-2  { padding-right: 164px;}
+.append-3  { padding-right: 246px;}
+.append-4  { padding-right: 328px;}
+.append-5  { padding-right: 410px;}
+.append-6  { padding-right: 492px;}
+.append-7  { padding-right: 574px;}
+.append-8  { padding-right: 656px;}
+.append-9  { padding-right: 738px;}
+.append-10 { padding-right: 820px;}
+.append-11 { padding-right: 902px;}
+
+
+/* Add these to a column to prepend empty cols. */
+.prepend-1  { padding-left: 82px;}
+.prepend-2  { padding-left: 164px;}
+.prepend-3  { padding-left: 246px;}
+.prepend-4  { padding-left: 328px;}
+.prepend-5  { padding-left: 410px;}
+.prepend-6  { padding-left: 492px;}
+.prepend-7  { padding-left: 574px;}
+.prepend-8  { padding-left: 656px;}
+.prepend-9  { padding-left: 738px;}
+.prepend-10 { padding-left: 820px;}
+.prepend-11 { padding-left: 902px;}
+
+
+
+/* Border on right hand side of a column. */
+div.border {
+  padding-right:8.5px;
+  margin-right:9.5px;
+  border-right: 1px solid #eee;
+}
+
+/* Border with more whitespace, spans one column. */
+div.colborder {
+  padding-right:56.5px;
+  margin-right:53.5px;
+  border-right: 1px solid #eee;
+}
+
+/* Use these classes on an element to push it into the 
+   next column, or to pull it into the previous column.  */
+
+.pull-1 { margin-left: -82px;}
+.pull-2 { margin-left: -164px;}
+.pull-3 { margin-left: -246px;}
+.pull-4 { margin-left: -328px;}
+.pull-5 { margin-left: -410px;}
+.pull-6 { margin-left: -492px;}
+.pull-7 { margin-left: -574px;}
+.pull-8 { margin-left: -656px;}
+.pull-9 { margin-left: -738px;}
+.pull-10 { margin-left: -820px;}
+.pull-11 { margin-left: -902px;}
+.pull-12 { margin-left: -984px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12 {float:left;position:relative;}
+
+
+.push-1 { margin: 0 -82px 1.5em 82px;}
+.push-2 { margin: 0 -164px 1.5em 164px;}
+.push-3 { margin: 0 -246px 1.5em 246px;}
+.push-4 { margin: 0 -328px 1.5em 328px;}
+.push-5 { margin: 0 -410px 1.5em 410px;}
+.push-6 { margin: 0 -492px 1.5em 492px;}
+.push-7 { margin: 0 -574px 1.5em 574px;}
+.push-8 { margin: 0 -656px 1.5em 656px;}
+.push-9 { margin: 0 -738px 1.5em 738px;}
+.push-10 { margin: 0 -820px 1.5em 820px;}
+.push-11 { margin: 0 -902px 1.5em 902px;}
+.push-12 { margin: 0 -984px 1.5em 984px;}
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12 {float:right;position:relative;}
+
+
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* Float right */
+.right {
+	float:right;
+}
+
+/* Float left */
+.left {
+	float:left;
+}
+
+div.spacer19 {height:19px;}
+
+img.center {   display: block;   margin: auto; }
+
+/* Add rounded borders */
+.rounded_3 {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.rounded_6 {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/* Use a .box to create a padded box inside a column.  */ 
+.box { 
+  background: #EEE; 
+  border: 1px solid #999;safa
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd; 
+  color: #ddd;
+  clear: both; 
+  float: none; 
+  width: 100%; 
+  height: .1em;
+  margin: 0 0 19px;
+  border: none; 
+}
+hr.space {
+  background: #fff;
+  color: #fff;
+}
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix, .container {display: inline-block;}
+* html .clearfix,
+* html .container {height: 1%;}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
